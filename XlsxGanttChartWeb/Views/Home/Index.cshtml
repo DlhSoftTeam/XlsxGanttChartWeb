@@ -2,7 +2,12 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div>
+    <h2>Importing/exporting Excel files</h2>
+    <div style="margin-bottom: 8px;">
+        <input id="xlsxFileInput" type="file"/>
+        <button title="Load" onclick="loadXlsx()">Load</button>
+        <button title="Save" onclick="saveXlsx()">Save</button>
+    </div>
+    <div id="ganttChartView" style="height: 388px;"></div>
 </div>
